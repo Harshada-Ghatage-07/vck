@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import Header from "../components/Header/Header";
+
+
 
 const CoursesPage = () => {
     return(
@@ -91,8 +94,8 @@ const CoursesPage = () => {
         <h1>Specialized & Vocational Courses</h1>
         <hr></hr>
         <p>n addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.</p>
-        <center><p>Have questions about a specific course?</p>
-        <a href="/contact" className="nav-item">Inquire About Courses</a></center>
+        <p>Have questions about a specific course?</p>
+       <center><Link to={"/contact"} className="nav-item">Inquire About Courses</Link></center>
 
 
 

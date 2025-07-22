@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     return(
@@ -12,12 +12,11 @@ const HomePage = () => {
                 <div>
                     <img className="hero2"src="https://vck-ojt.vercel.app/assets/college-banner-Cz0xylpt.png"></img>
                     
-
                     </div>
                     <div className="hero3">
              <h1>Welcome to Vivekanand College!</h1>
             <p>Your journey to excellence starts here</p>
-            <a href="/admission" className="navbox"><u>Apply Now!</u></a>
+            <Link to={"/admission"} className="navbox">Apply Now!</Link>
             </div>
             </div>
             <p><b>Vivekanand College </b>is a premier educational institution dedicated to fostering academic excellence, innovation, and holistic development. Established in 1980, we have proudly served generations of students, empowering them to achieve their full potential.</p>
@@ -37,8 +36,7 @@ const HomePage = () => {
             <img className="image" alt="student studing in library" src="https://vck-ojt.vercel.app/assets/campus-life-Crkero7B.jpg" height={200} width={399}></img>
             <p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
             <center><p>Ready to explore our courses?</p></center>
-            <center><a href="/courses" className="nav-item">Explore courses</a> </center>      
-                    
+            <center><Link to={"/courses"} className="nav-item">Explore courses </Link> </center>                   
                     </div>
                     </div>
                    

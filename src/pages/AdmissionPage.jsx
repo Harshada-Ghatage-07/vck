@@ -1,4 +1,6 @@
 import Header from "../components/Header/Header";
+import { Link } from "react-router-dom";
+
 
 const AdmissionPage = () => {
     return(
@@ -51,9 +53,9 @@ const AdmissionPage = () => {
                         <li><b>Fee Payment</b>: Complete the admission by paying the required fees.</li>
                     </ol>
                     <p>For detailed information on postgraduate program admissions, specific program syllabi, and fee structures, please visit our<br></br>
-                         <u><a href="/courses">courses page</a></u>
+                         <Link to="/courses">courses page</Link>
                          or
-                         <u><a href="/contact">contact us</a></u>
+                         <Link to="/contact">contact us</Link>
                          directly.
                     </p>
                 
